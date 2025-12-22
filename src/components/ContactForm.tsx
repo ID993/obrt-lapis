@@ -35,9 +35,7 @@ const ContactForm = ({ onBack }: ContactFormProps) => {
       body: new URLSearchParams(formDataObj as any).toString(),
     })
       .then(() => setStatus('Hvala! Vaša poruka je poslana.'))
-      .catch((error) =>
-        setStatus('Došlo je do greške. Molimo pokušajte ponovno.')
-      );
+      .catch(() => setStatus('Došlo je do greške. Molimo pokušajte ponovno.'));
   };
 
   return (
