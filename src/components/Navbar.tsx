@@ -1,6 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import logo from '../assets/logo.png';
+import logo from '../assets/text-logo.png';
 
 interface NavbarProps {
   onNavigate: (view: string) => void;
@@ -32,7 +32,7 @@ const Navbar = ({ onNavigate, currentView }: NavbarProps) => {
   };
 
   return (
-    <nav className="bg-[#3c62a3] border-b-2 border-white shadow-lg fixed w-full z-50">
+    <nav className="bg-[#3480b1] border-b-2 border-white shadow-lg fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-24">
           <div className="flex items-center">
@@ -55,10 +55,16 @@ const Navbar = ({ onNavigate, currentView }: NavbarProps) => {
             >
               Usluge
             </button>
+            <button
+              onClick={() => handleNavClick('pricelist')}
+              className="text-blue-100 hover:text-white font-medium transition-colors uppercase text-sm tracking-wide"
+            >
+              Cjenik
+            </button>
 
             <button
               onClick={() => handleNavClick('contact')}
-              className="bg-white text-[#3c62a3] px-6 py-3 rounded font-bold hover:bg-blue-50 transition-colors uppercase text-sm"
+              className="bg-white text-[#3480b1] px-6 py-3 rounded font-bold hover:bg-blue-50 transition-colors uppercase text-sm"
             >
               Kontakt
             </button>
@@ -80,7 +86,7 @@ const Navbar = ({ onNavigate, currentView }: NavbarProps) => {
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-[#3c62a3] border-t border-blue-800 shadow-xl">
+        <div className="md:hidden bg-[#3480b1] border-t border-blue-800 shadow-xl">
           <div className="px-4 pt-4 pb-6 space-y-2">
             <button
               onClick={handleServicesClick}
@@ -91,7 +97,7 @@ const Navbar = ({ onNavigate, currentView }: NavbarProps) => {
 
             <button
               onClick={() => handleNavClick('contact')}
-              className="block w-full text-center px-3 py-2 bg-white text-[#3c62a3] font-bold rounded-md mt-4"
+              className="block w-full text-center px-3 py-2 bg-white text-[#3480b1] font-bold rounded-md mt-4"
             >
               KONTAKT
             </button>

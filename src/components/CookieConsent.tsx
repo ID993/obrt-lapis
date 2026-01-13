@@ -39,7 +39,7 @@ const CookieConsent = ({ onOpenPolicy }: CookieConsentProps) => {
 
           <button
             onClick={handleAccept}
-            className="bg-[#3c62a3] hover:bg-blue-700 text-white text-xs font-bold py-2 px-6 rounded uppercase tracking-widest transition-colors shadow-lg border border-white/10"
+            className="bg-[#3480b1] hover:bg-blue-700 text-white text-xs font-bold py-2 px-6 rounded uppercase tracking-widest transition-colors shadow-lg border border-white/10"
           >
             Prihvaćam
           </button>

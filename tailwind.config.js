@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'lapis-blue': '#3c62a3',
+        'lapis-blue': '#3480b1',
         'lapis-dark': '#1a1a1a',
         'lapis-light': '#f4f4f4',
       },

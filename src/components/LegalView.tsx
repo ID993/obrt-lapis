@@ -22,7 +22,7 @@ const LegalView = ({ type, onBack }: LegalViewProps) => {
             podatke.
           </p>
 
-          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3c62a3]">
+          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3480b1]">
             1. Prikupljanje podataka
           </h3>
           <p className="mb-4">
@@ -30,7 +30,7 @@ const LegalView = ({ type, onBack }: LegalViewProps) => {
             podatke: Ime i prezime, E-mail adresu, Broj telefona (neobavezno).
           </p>
 
-          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3c62a3]">
+          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3480b1]">
             2. Svrha prikupljanja
           </h3>
           <p className="mb-4">
@@ -39,7 +39,7 @@ const LegalView = ({ type, onBack }: LegalViewProps) => {
             marketinške svrhe bez vašeg izričitog pristanka.
           </p>
 
-          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3c62a3]">
+          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3480b1]">
             3. Dijeljenje podataka
           </h3>
           <p className="mb-4">
@@ -47,7 +47,7 @@ const LegalView = ({ type, onBack }: LegalViewProps) => {
             zakonski obavezno.
           </p>
 
-          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3c62a3]">
+          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3480b1]">
             4. Vaša prava
           </h3>
           <p className="mb-4">
@@ -66,7 +66,7 @@ const LegalView = ({ type, onBack }: LegalViewProps) => {
             pravilan rad stranice i poboljšala korisničko iskustvo.
           </p>
 
-          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3c62a3]">
+          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3480b1]">
             1. Što su kolačići?
           </h3>
           <p className="mb-4">
@@ -74,7 +74,7 @@ const LegalView = ({ type, onBack }: LegalViewProps) => {
             vaše računalo ili mobilni uređaj kada je posjetite.
           </p>
 
-          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3c62a3]">
+          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3480b1]">
             2. Kako ih koristimo?
           </h3>
           <p className="mb-4">
@@ -83,7 +83,7 @@ const LegalView = ({ type, onBack }: LegalViewProps) => {
             za praćenje ponašanja korisnika u marketinške svrhe.
           </p>
 
-          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3c62a3]">
+          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3480b1]">
             3. Upravljanje kolačićima
           </h3>
           <p className="mb-4">
@@ -102,7 +102,7 @@ const LegalView = ({ type, onBack }: LegalViewProps) => {
             pristajete na sljedeće uvjete.
           </p>
 
-          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3c62a3]">
+          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3480b1]">
             1. Opće odredbe
           </h3>
           <p className="mb-4">
@@ -110,7 +110,7 @@ const LegalView = ({ type, onBack }: LegalViewProps) => {
             pravo izmjene sadržaja i cijena usluga bez prethodne najave.
           </p>
 
-          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3c62a3]">
+          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3480b1]">
             2. Intelektualno vlasništvo
           </h3>
           <p className="mb-4">
@@ -118,7 +118,7 @@ const LegalView = ({ type, onBack }: LegalViewProps) => {
             Obrta LAPIŠ i ne smiju se kopirati bez dozvole.
           </p>
 
-          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3c62a3]">
+          <h3 className="text-xl font-bold mt-6 mb-2 text-[#3480b1]">
             3. Odricanje od odgovornosti
           </h3>
           <p className="mb-4">
@@ -139,7 +139,7 @@ const LegalView = ({ type, onBack }: LegalViewProps) => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{ backgroundImage: `url(${contactBg})` }}
         ></div>
-        <div className="absolute inset-0 bg-[#3c62a3]/90 mix-blend-multiply z-0"></div>
+        <div className="absolute inset-0 bg-[#3480b1]/90 mix-blend-multiply z-0"></div>
 
         <h1 className="relative z-10 text-4xl text-white font-bold uppercase tracking-widest font-['Marcellus_SC']">
           {currentData.title}
@@ -154,7 +154,7 @@ const LegalView = ({ type, onBack }: LegalViewProps) => {
         <div className="text-center mt-12 mb-12">
           <button
             onClick={onBack}
-            className="px-8 py-3 bg-[#3c62a3] text-white text-lg font-bold tracking-widest rounded hover:bg-blue-800 transition-all duration-300 uppercase font-['Marcellus_SC'] shadow-lg"
+            className="px-8 py-3 bg-[#3480b1] text-white text-lg font-bold tracking-widest rounded hover:bg-blue-800 transition-all duration-300 uppercase font-['Marcellus_SC'] shadow-lg"
           >
             &larr; Povratak na naslovnu
           </button>

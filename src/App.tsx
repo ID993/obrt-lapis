@@ -8,7 +8,8 @@ import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import LegalView from './components/LegalView';
-import CookieConsent from './components/CookieConsent'; // <--- IMPORT
+import CookieConsent from './components/CookieConsent';
+import PriceList from './components/PriceList';
 
 function App() {
   const [currentView, setCurrentView] = useState('home');
@@ -18,7 +19,7 @@ function App() {
       case 'home':
         return (
           <>
-            <Hero />
+            <Hero onOpenPriceList={() => setCurrentView('pricelist')} />
             <Services />
             <CallToAction />
             <Partners />
@@ -26,6 +27,8 @@ function App() {
         );
       case 'contact':
         return <ContactForm onBack={() => setCurrentView('home')} />;
+      case 'pricelist':
+        return <PriceList onBack={() => setCurrentView('home')} />;
       case 'privacy':
         return (
           <LegalView type="privacy" onBack={() => setCurrentView('home')} />

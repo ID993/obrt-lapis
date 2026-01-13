@@ -44,7 +44,7 @@ const ContactForm = ({ onBack }: ContactFormProps) => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
         style={{ backgroundImage: `url(${contactBg})` }}
       ></div>
-      <div className="absolute inset-0 bg-[#3c62a3]/85 mix-blend-multiply z-0"></div>
+      <div className="absolute inset-0 bg-[#3480b1]/85 mix-blend-multiply z-0"></div>
 
       <div className="relative z-10 max-w-2xl w-full mx-auto px-4 sm:px-6">
         <div className="text-center mb-10">
@@ -84,7 +84,7 @@ const ContactForm = ({ onBack }: ContactFormProps) => {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-[#3c62a3] transition-colors font-['Marcellus'] tracking-normal text-slate-800"
+                className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-[#3480b1] transition-colors font-['Marcellus'] tracking-normal text-slate-800"
                 placeholder="Vaše Ime"
               />
             </div>
@@ -104,7 +104,7 @@ const ContactForm = ({ onBack }: ContactFormProps) => {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-[#3c62a3] transition-colors font-['Marcellus'] tracking-normal text-slate-800"
+                className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-[#3480b1] transition-colors font-['Marcellus'] tracking-normal text-slate-800"
                 placeholder="vasa@email.com"
               />
             </div>
@@ -124,7 +124,7 @@ const ContactForm = ({ onBack }: ContactFormProps) => {
               id="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-[#3c62a3] transition-colors font-['Marcellus'] tracking-normal text-slate-800"
+              className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-[#3480b1] transition-colors font-['Marcellus'] tracking-normal text-slate-800"
               placeholder="+385 98 ..."
             />
           </div>
@@ -144,14 +144,14 @@ const ContactForm = ({ onBack }: ContactFormProps) => {
               required
               value={formData.message}
               onChange={handleChange}
-              className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-[#3c62a3] transition-colors font-['Marcellus'] tracking-normal text-slate-800"
+              className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-[#3480b1] transition-colors font-['Marcellus'] tracking-normal text-slate-800"
               placeholder="Opišite što vam je potrebno..."
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="w-full bg-[#3c62a3] text-white font-bold uppercase tracking-widest py-4 rounded hover:bg-blue-800 transition-colors shadow-md text-lg"
+            className="w-full bg-[#3480b1] text-white font-bold uppercase tracking-widest py-4 rounded hover:bg-blue-800 transition-colors shadow-md text-lg"
           >
             Pošalji Upit
           </button>
@@ -173,7 +173,7 @@ const ContactForm = ({ onBack }: ContactFormProps) => {
           <div className="text-center mt-10">
             <button
               onClick={onBack}
-              className="px-8 py-3 border-2 border-white/50 text-white text-lg md:text-xl font-bold tracking-widest rounded hover:bg-white hover:text-[#3c62a3] transition-all duration-300 uppercase"
+              className="px-8 py-3 border-2 border-white/50 text-white text-lg md:text-xl font-bold tracking-widest rounded hover:bg-white hover:text-[#3480b1] transition-all duration-300 uppercase"
             >
               &larr; Povratak na naslovnu
             </button>

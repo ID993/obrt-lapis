@@ -10,7 +10,7 @@ const CallToAction = () => {
       ></div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 w-full">
-        <div className="bg-[#3c62a3]/70 backdrop-blur-md text-white rounded-2xl border-2 border-white/80 p-12 md:p-16 text-center shadow-2xl">
+        <div className="bg-[#3480b1]/70 backdrop-blur-md text-white rounded-2xl border-2 border-white/80 p-12 md:p-16 text-center shadow-2xl">
           <img
             src={hammerIcon}
             alt="Hammer Icon"

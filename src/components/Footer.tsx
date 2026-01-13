@@ -15,7 +15,7 @@ const Footer = ({ onNavigate }: FooterProps) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-16 pb-16">
         <div>
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-1 h-5 bg-[#3c62a3]"></div>
+            <div className="w-1 h-5 bg-[#3480b1]"></div>
             <h3 className="text-lg font-bold uppercase tracking-widest">
               O Nama
             </h3>
@@ -32,9 +32,9 @@ const Footer = ({ onNavigate }: FooterProps) => {
               VJEŠTINE KAKO BISMO POSTALI SPECIJALISTI ZA VODOINSTALACIJE I
               DIJAMANTNO BUŠENJE.
             </p>
-            <p>
+            {/* <p>
               UVIJEK POSTOJI NETKO TKO TO RADI JEFTINIJE. VAŠE JE DA ODABERETE!
-            </p>
+            </p> */}
             <p className="text-white font-normal">
               RADUJEMO SE BUDUĆOJ SURADNJI S VAMA.
             </p>
@@ -43,7 +43,7 @@ const Footer = ({ onNavigate }: FooterProps) => {
 
         <div>
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-1 h-5 bg-[#3c62a3]"></div>
+            <div className="w-1 h-5 bg-[#3480b1]"></div>
             <h3 className="text-lg font-bold uppercase tracking-widest">
               Kontakt
             </h3>

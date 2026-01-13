@@ -4,7 +4,7 @@ import partner3 from '../assets/tid-extra.png';
 
 const Partners = () => {
   return (
-    <section className="bg-[#3c62a3] border-y border-white pt-5 pb-16 text-white">
+    <section className="bg-[#3480b1] border-y border-white pt-5 pb-16 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-2xl font-bold uppercase tracking-widest mb-4">
           Partneri

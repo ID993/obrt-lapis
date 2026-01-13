@@ -71,11 +71,11 @@ const Services = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat fixed-bg z-0"
         style={{ backgroundImage: `url(${serviceBg})` }}
       >
-        <div className="absolute inset-0 bg-[#3c62a3]/80 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-[#3480b1]/80 mix-blend-multiply"></div>
       </div>
 
       <div className="relative z-10 w-full pt-0">
-        <div className="w-full bg-[#3c62a3] border-y-2 border-white py-6 mb-20 shadow-lg">
+        <div className="w-full bg-[#3480b1] border-y-2 border-white py-6 mb-20 shadow-lg">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-4">
             <div className="w-1 h-12 bg-white"></div>
             <h2 className="text-2xl font-bold uppercase tracking-widest text-white">
@@ -89,7 +89,7 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-blue-900/40 backdrop-blur-sm border border-white/30 rounded-xl p-8 hover:bg-blue-900/60 transition-colors flex flex-col h-full group shadow-2xl"
+                className="bg-[#3480b1]/40 backdrop-blur-sm border border-white/30 rounded-xl p-8 hover:bg-[#3480b1]/60 transition-colors flex flex-col h-full group shadow-2xl"
               >
                 <div className="transform group-hover:scale-110 transition-transform duration-300 mb-8">
                   <img
@@ -119,7 +119,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="bg-[#3c62a3] border-y-2 border-white relative">
+        <div className="bg-[#3480b1] border-y-2 border-white relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/30">
               <div className="py-6 text-center px-4">
