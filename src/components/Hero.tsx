@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react';
-import heroBg from '../assets/hero-bg2.png';
+import heroBg from '../assets/hero-bg2.webp';
 
 interface HeroProps {
   onOpenPriceList: () => void;
