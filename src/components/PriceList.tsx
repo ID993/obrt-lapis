@@ -47,15 +47,34 @@ const PriceList = ({ onBack }: PriceListProps) => {
       <div className="flex-grow max-w-4xl mx-auto px-4 md:px-6 w-full">
         <div className="bg-[#2a2a2a] p-6 md:p-8 rounded-xl shadow-lg border border-[#3480b1]/30">
           <div className="text-center mb-8 border-b border-gray-600 pb-6">
-            <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-widest font-['Marcellus_SC'] text-white drop-shadow-md">
+            <h2 className="text-2xl md:text-4xl font-bold uppercase tracking-widest font-['Marcellus_SC'] text-white drop-shadow-md">
               Cjenik Usluga
             </h2>
-            <div className="mt-2 text-[#3480b1] text-sm uppercase tracking-wider font-bold">
+            <div className="mt-2 text-[#3480b1] text-xs md:text-sm uppercase tracking-wider font-bold">
               Vrijedi od 01.01.2026.
             </div>
           </div>
 
-          <div className="overflow-x-auto">
+          <div className="md:hidden space-y-4">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="bg-[#333] p-4 rounded-lg border border-gray-700 hover:border-[#3480b1] transition-colors"
+              >
+                <div className="text-white font-medium text-lg leading-tight mb-3">
+                  {service.name}
+                </div>
+
+                <div className="border-t border-dashed border-gray-600 my-2"></div>
+
+                <div className="text-[#7dd6de] font-bold text-right text-lg">
+                  {service.price}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-gradient-to-r from-[#3480b1] to-[#2a5a7a] text-white">
