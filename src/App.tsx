@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CallToAction from './components/CallToAction';
 import Services from './components/Services';
-import Partners from './components/Partners';
+// import Partners from './components/Partners';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import ScrollToTopButton from './components/ScrollToTopButton';
@@ -22,7 +22,7 @@ function App() {
             <Hero onOpenPriceList={() => setCurrentView('pricelist')} />
             <Services />
             <CallToAction />
-            <Partners />
+            {/* <Partners /> */}
           </>
         );
       case 'contact':

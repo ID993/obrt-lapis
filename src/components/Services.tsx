@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import serviceBg from '../assets/services-bg.jpg';
 import plumbingIcon from '../assets/plumbing.png';
 import diadrillIcon from '../assets/diadrill.png';
+import ventIcon from '../assets/ventilation.png';
 
 const Counter = ({
   target,
@@ -48,7 +49,6 @@ const Services = () => {
         'Ugradnja i popravak cijevi',
         'Ugradnja i zamjena kanalizacijskih cijevi',
         'Ugradnja sanitarija',
-        'Čišćenje odvoda i kanalizacija',
         'Izrada kotlovnica',
         'Sitne intervencije',
       ],
@@ -61,6 +61,16 @@ const Services = () => {
         'Bušenje armiranog betona',
         'Bušenje za instalacijske vodove',
         'Bušenje ventilacijskih otvora',
+      ],
+    },
+    {
+      icon: ventIcon,
+      title: 'Ventilacije',
+      items: [
+        'Ugradnja ventilacijskih sustava',
+        'Montaža rešetki i ventilatora',
+        'Projektiranje protoka zraka',
+        'Održavanje ventilacije',
       ],
     },
   ];
@@ -85,32 +95,33 @@ const Services = () => {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-24">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center max-w-4xl mx-auto">
+          {/* ADJUSTED: Reduced gap to 6 and used px-4 to give text more horizontal space inside cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-center w-full">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-[#3480b1]/40 backdrop-blur-sm border border-white/30 rounded-xl p-8 hover:bg-[#3480b1]/60 transition-colors flex flex-col h-full group shadow-2xl"
+                className="bg-[#3480b1]/40 backdrop-blur-sm border border-white/30 rounded-xl p-6 hover:bg-[#3480b1]/60 transition-colors flex flex-col h-full group shadow-2xl"
               >
-                <div className="transform group-hover:scale-110 transition-transform duration-300 mb-8">
+                <div className="transform group-hover:scale-110 transition-transform duration-300 mb-6">
                   <img
                     src={service.icon}
                     alt={service.title}
-                    className="w-20 h-20 mx-auto object-contain brightness-0 invert"
+                    className="w-16 h-16 mx-auto object-contain brightness-0 invert"
                   />
                 </div>
 
-                <h3 className="text-xl font-bold text-center uppercase tracking-widest mb-8 border-b border-white/20 pb-4">
+                <h3 className="text-lg font-bold text-center uppercase tracking-widest mb-6 border-b border-white/20 pb-4">
                   {service.title}
                 </h3>
 
-                <ul className="space-y-4 flex-grow px-4">
+                <ul className="space-y-3 flex-grow px-2">
                   {service.items.map((item, idx) => (
                     <li
                       key={idx}
-                      className="flex items-start gap-3 text-sm text-blue-50 font-light tracking-wide"
+                      className="flex items-start gap-2 text-xs md:text-sm text-blue-50 font-light tracking-wide"
                     >
                       <span className="w-1.5 h-1.5 bg-white rounded-full mt-1.5 flex-shrink-0"></span>
-                      <span className="uppercase">{item}</span>
+                      <span className="uppercase leading-tight">{item}</span>
                     </li>
                   ))}
                 </ul>

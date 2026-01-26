@@ -23,7 +23,7 @@ const Footer = ({ onNavigate }: FooterProps) => {
 
           <div className="text-white/90 text-sm space-y-6 tracking-wider leading-relaxed font-light">
             <p>
-              'LAPIŠ' JE OSNOVAN NA PRINCIPIMA INTEGRITETA, POUZDANOSTI I
+              LAPIŠ JE OSNOVAN NA PRINCIPIMA INTEGRITETA, POUZDANOSTI I
               MAJSTORSKE IZRADE, TE SMO ZAHVALJUJUĆI TOME PREPOZNATI I VISOKO
               PREPORUČENI U INDUSTRIJI.
             </p>

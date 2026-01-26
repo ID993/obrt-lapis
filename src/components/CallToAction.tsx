@@ -3,7 +3,7 @@ import wallBg from '../assets/wall-bg.jpg';
 
 const CallToAction = () => {
   return (
-    <section className="relative py-24 bg-gray-300 flex items-center justify-center">
+    <section className="relative py-24 bg-gray-300 flex items-center justify-center border-b-2 border-white">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat mix-blend-multiply"
         style={{ backgroundImage: `url(${wallBg})` }}

@@ -32,6 +32,10 @@ const Hero = ({ onOpenPriceList }: HeroProps) => {
               <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
               Dijamantno bušenje
             </li>
+            <li className="flex items-center gap-3">
+              <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
+              Ventilacije
+            </li>
           </ul>
 
           <div className="mt-8">
