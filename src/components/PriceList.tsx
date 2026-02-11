@@ -58,7 +58,7 @@ const PriceList = ({ onBack }: PriceListProps) => {
             </h3>
           </div>
 
-          <div className="md:hidden space-y-4">
+          {/* <div className="md:hidden space-y-4">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -75,7 +75,7 @@ const PriceList = ({ onBack }: PriceListProps) => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* <div className="hidden md:block overflow-x-auto">
             <table className="w-full text-left border-collapse">
