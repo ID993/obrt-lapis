@@ -3,44 +3,44 @@ interface PriceListProps {
 }
 
 const PriceList = ({ onBack }: PriceListProps) => {
-  const services = [
-    {
-      name: 'Postavljanje novih vodovodnih instalacija',
-      price: '33,18 - 53,09 € / točka',
-    },
-    {
-      name: 'Popravak curenja (cijevi, ventili...)',
-      price: '46,45 - 79,63 €',
-    },
-    {
-      name: 'Otčepljavanje odvoda i WC-a',
-      price: '39,82 - 92,91 €',
-    },
-    {
-      name: 'Ugradnja bojlera',
-      price: '53,09 - 106,18 €',
-    },
-    {
-      name: 'Montaža i servis WC školjki, umivaonika i slavina',
-      price: '53,09 - 92,91 €',
-    },
-    {
-      name: 'Dijamantno bušenje betona (fi 30mm do 350mm)',
-      price: '13,27 - 33,18 € / cm',
-    },
-    {
-      name: 'Ugradnja tuš kabina i kada',
-      price: '106,18 - 199,08 €',
-    },
-    {
-      name: 'Demontaža i montaža radijatora',
-      price: '53,09 - 92,91 €',
-    },
-    {
-      name: 'Ugradnja pumpi za vodu i hidrofora',
-      price: '132,72 - 331,81 €',
-    },
-  ];
+  // const services = [
+  //   {
+  //     name: 'Postavljanje novih vodovodnih instalacija',
+  //     price: '33,18 - 53,09 € / točka',
+  //   },
+  //   {
+  //     name: 'Popravak curenja (cijevi, ventili...)',
+  //     price: '46,45 - 79,63 €',
+  //   },
+  //   {
+  //     name: 'Otčepljavanje odvoda i WC-a',
+  //     price: '39,82 - 92,91 €',
+  //   },
+  //   {
+  //     name: 'Ugradnja bojlera',
+  //     price: '53,09 - 106,18 €',
+  //   },
+  //   {
+  //     name: 'Montaža i servis WC školjki, umivaonika i slavina',
+  //     price: '53,09 - 92,91 €',
+  //   },
+  //   {
+  //     name: 'Dijamantno bušenje betona (fi 30mm do 350mm)',
+  //     price: '13,27 - 33,18 € / cm',
+  //   },
+  //   {
+  //     name: 'Ugradnja tuš kabina i kada',
+  //     price: '106,18 - 199,08 €',
+  //   },
+  //   {
+  //     name: 'Demontaža i montaža radijatora',
+  //     price: '53,09 - 92,91 €',
+  //   },
+  //   {
+  //     name: 'Ugradnja pumpi za vodu i hidrofora',
+  //     price: '132,72 - 331,81 €',
+  //   },
+  // ];
 
   return (
     <section className="min-h-screen bg-[#1a1a1a] font-sans flex flex-col pt-32 text-white">
