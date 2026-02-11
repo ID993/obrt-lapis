@@ -51,8 +51,11 @@ const PriceList = ({ onBack }: PriceListProps) => {
               Cjenik Usluga
             </h2>
             <div className="mt-2 text-[#3480b1] text-xs md:text-sm uppercase tracking-wider font-bold">
-              Vrijedi od 01.01.2026.
+              {/* Vrijedi od 01.01.2026. */}
             </div>
+            <h3 className="text-2xl md:text-4xl font-bold uppercase tracking-widest font-['Marcellus_SC'] text-white drop-shadow-md">
+              uskoro
+            </h3>
           </div>
 
           <div className="md:hidden space-y-4">
@@ -74,7 +77,7 @@ const PriceList = ({ onBack }: PriceListProps) => {
             ))}
           </div>
 
-          <div className="hidden md:block overflow-x-auto">
+          {/* <div className="hidden md:block overflow-x-auto">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-gradient-to-r from-[#3480b1] to-[#2a5a7a] text-white">
@@ -102,11 +105,11 @@ const PriceList = ({ onBack }: PriceListProps) => {
                 ))}
               </tbody>
             </table>
-          </div>
+          </div> */}
 
           <div className="mt-8 text-sm text-gray-400 text-center italic leading-relaxed">
-            <p>Sve cijene su okvirne te bez uključenog PDV-a.</p>
-            <p>Kontaktirajte nas za besplatnu procjenu i detaljnu ponudu.</p>
+            {/* <p>Sve cijene su okvirne te bez uključenog PDV-a.</p>
+            <p>Kontaktirajte nas za besplatnu procjenu i detaljnu ponudu.</p> */}
             <p className="mt-4 text-xl font-bold text-[#3480b1]">
               📞{' '}
               <a
