@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import contactBg from '../assets/contact-bg.jpg';
+import contactBg from '../assets/contact-bg.webp';
 
 interface ContactFormProps {
   onBack?: () => void;
@@ -16,7 +16,7 @@ const ContactForm = ({ onBack }: ContactFormProps) => {
   const [status, setStatus] = useState<string | null>(null);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({
       ...formData,

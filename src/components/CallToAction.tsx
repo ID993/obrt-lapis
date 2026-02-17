@@ -1,5 +1,5 @@
 import hammerIcon from '../assets/hammer.png';
-import wallBg from '../assets/wall-bg.jpg';
+import wallBg from '../assets/wall-bg.webp';
 
 const CallToAction = () => {
   return (

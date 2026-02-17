@@ -1,4 +1,4 @@
-import contactBg from '../assets/contact-bg.jpg';
+import contactBg from '../assets/contact-bg.webp';
 
 type LegalType = 'privacy' | 'cookies' | 'terms';
 

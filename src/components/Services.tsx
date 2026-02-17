@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import serviceBg from '../assets/services-bg.jpg';
+import serviceBg from '../assets/services-bg.webp';
 import plumbingIcon from '../assets/plumbing.png';
 import diadrillIcon from '../assets/diadrill.png';
 import ventIcon from '../assets/ventilation.png';
