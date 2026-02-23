@@ -23,7 +23,7 @@ const Footer = ({ onNavigate }: FooterProps) => {
 
           <div className="text-white/90 text-sm space-y-6 tracking-wider leading-relaxed font-light">
             <p>
-              LAPIŠ JE VAŠ POUZDANI VODOINSTALATER NA OTOKU BRAČ. NUDIMO
+              LAPIŠ JE VAŠ POUZDANI VODOINSTALATER NA OTOKU BRAČU. NUDIMO
               KOMPLETNE VODOINSTALATERSKE USLUGE - OD UGRADNJE NOVIH VODOVODNIH
               INSTALACIJA I SANITARIJA DO HITNIH INTERVENCIJA I POPRAVAKA.
             </p>
