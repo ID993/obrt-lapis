@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react';
-import heroBg from '../assets/hero-bg3.webp';
+import heroBg from '../assets/lapis-hero.webp';
 
 interface HeroProps {
   onOpenPriceList: () => void;
@@ -7,16 +7,18 @@ interface HeroProps {
 
 const Hero = ({ onOpenPriceList }: HeroProps) => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center overflow-hidden bg-[#1b405a]"
+    >
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat fixed-bg"
+        aria-hidden="true"
+        className="absolute inset-0 bg-no-repeat bg-[length:auto_18rem] bg-[position:calc(50%_-_170px)_6rem] lg:bg-contain lg:bg-center"
         style={{ backgroundImage: `url(${heroBg})` }}
-      >
-        <div className="absolute inset-0 bg-[#3480b1]/60 mix-blend-multiply"></div>
-      </div>
+      />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 pt-20">
-        <div className="border border-white/80 bg-[#3480b1]/60 backdrop-blur-md rounded-3xl p-8 shadow-2xl max-w-md">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 pt-96 pb-8 lg:pt-20 lg:pb-0">
+        <div className="border border-white/80 bg-[#3480b1]/60 backdrop-blur-md rounded-3xl p-8 shadow-2xl max-w-md mx-auto lg:mx-0">
           <h1 className="text-3xl font-sans text-white uppercase tracking-widest mb-6 leading-tight drop-shadow-md">
             Naše usluge <br />
           </h1>

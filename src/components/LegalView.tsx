@@ -26,8 +26,9 @@ const LegalView = ({ type, onBack }: LegalViewProps) => {
             1. Prikupljanje podataka
           </h3>
           <p className="mb-4">
-            Putem kontaktnog obrasca na ovoj web stranici prikupljamo sljedeće
-            podatke: Ime i prezime, E-mail adresu, Broj telefona (neobavezno).
+            Putem kontaktnog obrasca prikupljamo ime i prezime, adresu e-pošte,
+            odabranu uslugu, mjesto radova, hitnost i opis upita. Broj mobitela
+            i fotografije prikupljamo ako ih priložite uz upit.
           </p>
 
           <h3 className="text-xl font-bold mt-6 mb-2 text-[#3480b1]">
@@ -40,11 +41,10 @@ const LegalView = ({ type, onBack }: LegalViewProps) => {
           </p>
 
           <h3 className="text-xl font-bold mt-6 mb-2 text-[#3480b1]">
-            3. Dijeljenje podataka
+            3. Zaprimanje upita
           </h3>
           <p className="mb-4">
-            Vaše osobne podatke ne dijelimo s trećim stranama, osim ako je to
-            zakonski obavezno.
+            Upite i fotografije zaprimamo putem usluge Netlify Forms.
           </p>
 
           <h3 className="text-xl font-bold mt-6 mb-2 text-[#3480b1]">

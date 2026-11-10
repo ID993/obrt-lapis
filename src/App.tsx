@@ -10,9 +10,20 @@ import ScrollToTopButton from './components/ScrollToTopButton';
 import LegalView from './components/LegalView';
 import CookieConsent from './components/CookieConsent';
 import PriceList from './components/PriceList';
+import type { ServiceName } from './services';
 
 function App() {
-  const [currentView, setCurrentView] = useState('home');
+  const [view, setView] = useState<{ name: string; service?: ServiceName }>({
+    name: 'home',
+  });
+  const currentView = view.name;
+
+  const setCurrentView = (name: string) => setView({ name });
+
+  const openInquiry = (service: ServiceName) => {
+    setView({ name: 'contact', service });
+    window.scrollTo(0, 0);
+  };
 
   const renderView = () => {
     switch (currentView) {
@@ -20,13 +31,18 @@ function App() {
         return (
           <>
             <Hero onOpenPriceList={() => setCurrentView('pricelist')} />
-            <Services />
+            <Services onInquire={openInquiry} />
             <CallToAction />
             {/* <Partners /> */}
           </>
         );
       case 'contact':
-        return <ContactForm onBack={() => setCurrentView('home')} />;
+        return (
+          <ContactForm
+            initialService={view.service}
+            onBack={() => setCurrentView('home')}
+          />
+        );
       case 'pricelist':
         return <PriceList onBack={() => setCurrentView('home')} />;
       case 'privacy':

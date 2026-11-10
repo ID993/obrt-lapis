@@ -2,7 +2,7 @@
 <html lang="hr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -95,11 +95,27 @@
     </script>
   </head>
   <body>
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <input type="tel" name="phone" />
-      <textarea name="message"></textarea>
+    <form
+      name="contact"
+      method="POST"
+      enctype="multipart/form-data"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <label>Ime i prezime<input type="text" name="name" /></label>
+      <label>E-pošta<input type="email" name="email" /></label>
+      <label>Telefon<input type="tel" name="phone" /></label>
+      <label>Usluga<input type="text" name="service" /></label>
+      <label>Mjesto na Braču<input type="text" name="location" /></label>
+      <label>Hitnost<input type="text" name="urgency" /></label>
+      <label
+        >Opis problema ili radova<textarea name="message"></textarea>
+      </label>
+      <label>Fotografija 1<input type="file" name="photo-1" /></label>
+      <label>Fotografija 2<input type="file" name="photo-2" /></label>
+      <label>Fotografija 3<input type="file" name="photo-3" /></label>
+      <input name="bot-field" />
     </form>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
