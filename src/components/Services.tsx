@@ -3,6 +3,7 @@ import serviceBg from '../assets/services-bg.webp';
 import plumbingIcon from '../assets/plumbing.png';
 import diadrillIcon from '../assets/diadrill.png';
 import ventIcon from '../assets/ventilation.png';
+import { serviceNames, type ServiceName } from '../services';
 
 const Counter = ({
   target,
@@ -40,11 +41,11 @@ const Counter = ({
   );
 };
 
-const Services = () => {
+const Services = ({ onInquire }: { onInquire: (service: ServiceName) => void }) => {
   const services = [
     {
       icon: plumbingIcon,
-      title: 'Vodoinstalacije',
+      title: serviceNames.plumbing,
       items: [
         'Ugradnja i popravak cijevi',
         'Ugradnja i zamjena kanalizacijskih cijevi',
@@ -55,7 +56,7 @@ const Services = () => {
     },
     {
       icon: diadrillIcon,
-      title: 'Dijamantno Bušenje',
+      title: serviceNames.diamondDrilling,
       items: [
         'Precizno dijamantno bušenje',
         'Bušenje armiranog betona',
@@ -65,7 +66,7 @@ const Services = () => {
     },
     {
       icon: ventIcon,
-      title: 'Ventilacije',
+      title: serviceNames.ventilation,
       items: [
         'Ugradnja ventilacijskih sustava',
         'Montaža rešetki i ventilatora',
@@ -97,9 +98,9 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-24">
           {/* ADJUSTED: Reduced gap to 6 and used px-4 to give text more horizontal space inside cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-center w-full">
-            {services.map((service, index) => (
+            {services.map((service) => (
               <div
-                key={index}
+                key={service.title}
                 className="bg-[#3480b1]/40 backdrop-blur-sm border border-white/30 rounded-xl p-6 hover:bg-[#3480b1]/60 transition-colors flex flex-col h-full group shadow-2xl"
               >
                 <div className="transform group-hover:scale-110 transition-transform duration-300 mb-6">
@@ -125,6 +126,15 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
+
+                <button
+                  type="button"
+                  onClick={() => onInquire(service.title)}
+                  aria-label={`Pošalji upit za uslugu ${service.title}`}
+                  className="mt-6 w-full rounded bg-white px-4 py-3 text-sm font-bold uppercase tracking-wide text-[#265d81] hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  Pošalji upit
+                </button>
               </div>
             ))}
           </div>

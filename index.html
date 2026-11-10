@@ -95,11 +95,25 @@
     </script>
   </head>
   <body>
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <form
+      name="contact"
+      method="POST"
+      enctype="multipart/form-data"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="tel" name="phone" />
+      <input type="text" name="service" />
+      <input type="text" name="location" />
+      <input type="text" name="urgency" />
       <textarea name="message"></textarea>
+      <input type="file" name="photo-1" />
+      <input type="file" name="photo-2" />
+      <input type="file" name="photo-3" />
+      <input name="bot-field" />
     </form>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

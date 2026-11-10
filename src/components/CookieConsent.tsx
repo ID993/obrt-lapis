@@ -1,22 +1,28 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 interface CookieConsentProps {
   onOpenPolicy: () => void;
 }
 
-const CookieConsent = ({ onOpenPolicy }: CookieConsentProps) => {
-  const [isVisible, setIsVisible] = useState(false);
+const consentKey = 'cookieConsent';
 
-  useEffect(() => {
-    const consent = localStorage.getItem('cookieConsent');
-    if (!consent) {
-      setIsVisible(true);
+const CookieConsent = ({ onOpenPolicy }: CookieConsentProps) => {
+  const [isVisible, setIsVisible] = useState(() => {
+    try {
+      return !window.localStorage.getItem(consentKey);
+    } catch {
+      return true;
     }
-  }, []);
+  });
 
   const handleAccept = () => {
-    localStorage.setItem('cookieConsent', 'true');
     setIsVisible(false);
+
+    try {
+      window.localStorage.setItem(consentKey, 'true');
+    } catch {
+      // The banner can still close for this visit if storage is blocked.
+    }
   };
 
   if (!isVisible) return null;
