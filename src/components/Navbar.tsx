@@ -1,6 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import logo from '../assets/text-logo.png'; // Make sure this path is correct for your file structure
+import logo from '../assets/lapis-wordmark.png';
 
 interface NavbarProps {
   onNavigate: (view: string) => void;
@@ -42,8 +42,8 @@ const Navbar = ({ onNavigate, currentView }: NavbarProps) => {
             >
               <img
                 src={logo}
-                alt="Obrt Lapis"
-                className="h-16 w-auto brightness-100"
+                alt="Obrt Lapiš"
+                className="h-12 w-auto sm:h-14"
               />
             </button>
           </div>
